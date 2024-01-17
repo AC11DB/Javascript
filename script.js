@@ -1,3 +1,4 @@
+//grouped user for array
 const user = [
   {
   userId: 1234,
@@ -19,26 +20,21 @@ const user = [
   }
 ];
 
+//display output
 console.log(user[0].firstName, user[0].lastName + " Likes to play some classical piano songs");
 console.log("AND")
 console.log(user[1].firstName, user[1].lastName + " and" + " " + user[2].firstName, user[2].lastName + " made good piano scores")
 
-//functions comparing two numbers
-function compareNumbers(num1, num2) {}
-  // Check if num1 is greater than num2
-  if (num1 > num2) {
-      return num1; // Return num1 if it's greater
-  } else {
-      return num2;
+//comparing numbers
+var textbox = document.getElementById('textbox');
+var entertedAmount = Number(parseFloat(textbox.value).toFixed(2));
+var maxPrice = Number(parseFloat(5000).toFixed(2));
+
+
+if (entertedAmount <= maxPrice) {
+  console.log(entertedAmount + " less than "+ maxPrice );
+    } else {
+    alert('Please enter a price less than R');
+        textbox.value = 0;
   }
-function getFullName(user) {
-  // Concatenate the firstName and lastName properties of the user object
-  return user.firstName + " " + user.lastName;
-};
-
-var largerNumber = compareNumbers(numbersArray[0], numbersArray[1]);
-var fullName = getFullName(person);
-
-// Log the results to the console for testing
-console.log("The larger number is: " + largerNumber);
-console.log("The user's full name is: " + fullName);
+<input id="textbox" type="number" value="522.5886"/>
