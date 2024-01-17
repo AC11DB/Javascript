@@ -35,3 +35,10 @@ function getFullName(user) {
   // Concatenate the firstName and lastName properties of the user object
   return user.firstName + " " + user.lastName;
 };
+
+var largerNumber = compareNumbers(numbersArray[0], numbersArray[1]);
+var fullName = getFullName(person);
+
+// Log the results to the console for testing
+console.log("The larger number is: " + largerNumber);
+console.log("The user's full name is: " + fullName);
