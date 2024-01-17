@@ -26,15 +26,18 @@ console.log("AND")
 console.log(user[1].firstName, user[1].lastName + " and" + " " + user[2].firstName, user[2].lastName + " made good piano scores")
 
 //comparing numbers
-var textbox = document.getElementById('textbox');
-var entertedAmount = Number(parseFloat(textbox.value).toFixed(2));
-var maxPrice = Number(parseFloat(5000).toFixed(2));
-
-
-if (entertedAmount <= maxPrice) {
-  console.log(entertedAmount + " less than "+ maxPrice );
-    } else {
-    alert('Please enter a price less than R');
-        textbox.value = 0;
+function compareNumbers(num1, num2) {
+  if (num1 > num2) {
+      return num1;
+  } else if (num2 > num1) {
+      return num2;
+  } else {
+      return "Numbers are equal"; // If both numbers are equal
   }
-<input id="textbox" type="number" value="522.5886"/>
+}
+
+// Example usage of the function
+var result = compareNumbers(10, 5);
+
+// Log the result to the console for testing
+console.log("The larger number is: " + result);
