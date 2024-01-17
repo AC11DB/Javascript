@@ -20,4 +20,4 @@ const user = [
 ];
 
 console.log(user[0].firstName, user[0].lastName);
-console.log(user[1].firstName, user[1].lastName) + "made good piano scores"
+console.log(user[1].firstName, user[1].lastName + "made good piano scores")
