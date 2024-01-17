@@ -7,16 +7,17 @@ const user = [
   },
   {
     userId: 1235,
-    firstName: "Copernicus",
-    lastName: "Sees the Stars",
+    firstName: "Fryderyk",
+    lastName: "Chopin",
     isActive: false,
   },
   {
   userId: 1236,
-  firstName: "Sally",
-  lastName: "Fields",
+  firstName: "Ludwig",
+  lastName: "Beethoven",
   isActive: true,
   }
 ];
 
-console.log(user[1].firstName, user[2].lastName);
+console.log(user[0].firstName, user[0].lastName);
+console.log(user[1].firstName, user[1]lastName + "made good piano scores")
