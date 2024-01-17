@@ -20,4 +20,5 @@ const user = [
 ];
 
 console.log(user[0].firstName, user[0].lastName + " Likes to play some classical piano songs");
+console.log("AND")
 console.log(user[1].firstName, user[1].lastName + " and" + " " + user[2].firstName, user[2].lastName + " made good piano scores")
