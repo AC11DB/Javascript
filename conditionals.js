@@ -22,5 +22,3 @@ if (userId === userIdTwo) {
 } else {
   return;
 }
-
-//incomplete
