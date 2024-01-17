@@ -34,3 +34,4 @@ function compareNumbers(num1, num2) {
 function getFullName(user) {
   // Concatenate the firstName and lastName properties of the user object
   return user.firstName + " " + user.lastName;
+}
